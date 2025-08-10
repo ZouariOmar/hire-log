@@ -18,6 +18,7 @@ package com.mycompany.hirelog.controller;
 // Core java imports
 import java.io.IOException;
 import java.net.URL;
+import java.util.Properties;
 import java.util.ResourceBundle;
 
 // `log4j` java imports
@@ -46,6 +47,8 @@ import javafx.stage.Stage;
 public class LoginController {
   private static final Logger _LOGGER = LogManager.getLogger(LoginController.class);
 
+  private final Properties emailProperties;
+
   @FXML // ResourceBundle that was given to the FXMLLoader
   private ResourceBundle resources;
 
@@ -73,12 +76,23 @@ public class LoginController {
   @FXML // fx:id="status"
   private Label status; // Value injected by FXMLLoader
 
+  public LoginController() {
+    emailProperties = null;
+  }
+
+  public LoginController(final Properties emailProperties) {
+    this.emailProperties = emailProperties;
+  }
+
   @FXML
   void onForgetPasswordAction(final ActionEvent event) throws IOException {
-    final Parent root = FXMLLoader.load(getClass().getResource("/fxml/ForgetPassword.fxml"));
-    // Get the current stage (window) from the event source and set the new scene
+    final FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/ForgetPassword.fxml"));
+    loader.setControllerFactory(_ -> {
+      return new FrogetPasswordController(emailProperties);
+    });
+    final Parent root = loader.load();
     final Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    stage.setTitle("HireLog - Sign up");
+    stage.setTitle("HireLog - Reset Password");
     stage.setScene(new Scene(root));
     stage.show();
   }

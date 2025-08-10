@@ -20,6 +20,7 @@ package com.mycompany.hirelog.controller;
 // Core java imports
 import java.io.IOException;
 import java.net.URL;
+import java.util.Properties;
 import java.util.ResourceBundle;
 
 // Java Log4j imports
@@ -50,6 +51,8 @@ import javafx.stage.Stage;
 
 public class FrogetPasswordController {
   private static final Logger _LOGGER = LogManager.getLogger(FrogetPasswordController.class);
+
+  private final Properties emailProperties;
 
   private static String generatedResetCode;
 
@@ -89,6 +92,13 @@ public class FrogetPasswordController {
   private Label status; // Value injected by FXMLLoader
 
   public FrogetPasswordController() {
+    emailProperties = null;
+    generatedResetCode = null;
+    confermedEmail = null;
+  }
+
+  public FrogetPasswordController(Properties emailProperties) {
+    this.emailProperties = emailProperties;
     generatedResetCode = null;
     confermedEmail = null;
   }
@@ -122,6 +132,7 @@ public class FrogetPasswordController {
 
     // Send the mail
     MailSenderService.send(
+        emailProperties,
         confermedEmail,
         "do-not-reply - Reset Password",
         "Reset Code: " + generatedResetCode);

@@ -56,28 +56,53 @@
 
 ## 🛠 How to Use
 
-### Prerequisites
+### HireLog SMTP settings
 
-- Java JDK 17 or later
-- JavaFX SDK ([https://openjfx.io/](https://openjfx.io/))
-- SQLite JDBC driver
-- Maven
+Create a properties file `~/exemple.properties` with the following content:
 
-> See [pom.xml](https://raw.githubusercontent.com/ZouariOmar/HireLog/refs/heads/main/project/pom.xml) for more details
+```file
+SMTP_HOST=:)     -- SMTP server
+SMTP_TOKEN=:)    -- passord
+SMTP_USERNAME=:) -- Sender
+SMTP_PORT=:)     -- Default: 587
+```
 
-### Run the app
+### Run HireLog on Linux
 
-Clone the repository and run via your IDE or command line:
+Make sure the HireLog executable is in your current directory, then run:
 
 ```bash
-# Clone this repo
-$ git clone https://github.com/ZouariOmar/HireLog
+# Linux
+./HireLog --file exemple.properties
+```
 
-# Open in your IDE and run the main class (HireLogApp.java)
-# ...
+- Or Make your own image:
 
-# Or if you are using Linux you can run
-cd HireLog && ./jrun --install && ./jrun -r
+```bash
+$ jpackage --name HireLog \
+           --input lib \ # Location of application dependencies (JARs, modules)
+           --main-jar HireLog-1.0.0.jar \
+           --main-class com.mycompany.hirelog.HireLogApp
+           --type app-image \
+           --icon HireLog/doc/logo.png \
+           --module-path lib \ # Required modules (JavaFX, etc.)
+           --add-modules javafx.controls,javafx.fxml,java.sql,java.management
+```
+
+### Run HireLog on Windows
+
+1. Open Command Prompt (cmd).
+
+2. Navigate to the folder where your HireLog.exe (or HireLog.bat if that’s your launcher) is located, for example:
+
+```cmd
+cd C:\path\to\HireLog\
+```
+
+3. Run the application with the properties file as an argument:
+
+```cmd
+HireLog.exe C:\Users\YourName\exemple.properties
 ```
 
 ## 📂 Project Structure
