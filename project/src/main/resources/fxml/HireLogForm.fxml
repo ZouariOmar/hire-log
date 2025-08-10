@@ -25,7 +25,7 @@
             <Label fx:id="status" layoutX="16.0" layoutY="268.0" prefHeight="18.0" prefWidth="342.0" />
         <ButtonBar layoutX="158.0" layoutY="298.0" prefHeight="40.0" prefWidth="199.0">
           <buttons>
-            <Button fx:id="cancel" cancelButton="true" mnemonicParsing="false" text="Cancel" />
+            <Button fx:id="cancel" cancelButton="true" mnemonicParsing="false" onAction="#onCancelAction" text="Cancel" />
             <Button fx:id="submit" defaultButton="true" mnemonicParsing="false" onAction="#onSubmitAction" text="Ok" />
           </buttons>
         </ButtonBar>

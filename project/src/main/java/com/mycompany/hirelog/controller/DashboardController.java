@@ -56,7 +56,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 public class DashboardController {
-  private static final Logger _LOGGER = LogManager.getLogger();
+  private static final Logger _LOGGER = LogManager.getLogger(DashboardController.class);
 
   private final int userId; // User id | Must be come from `SignUpController`
 

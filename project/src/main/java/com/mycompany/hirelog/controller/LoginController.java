@@ -44,7 +44,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class LoginController {
-  private static final Logger _LOGGER = LogManager.getLogger();
+  private static final Logger _LOGGER = LogManager.getLogger(LoginController.class);
 
   @FXML // ResourceBundle that was given to the FXMLLoader
   private ResourceBundle resources;

@@ -49,7 +49,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class FrogetPasswordController {
-  private static final Logger _LOGGER = LogManager.getLogger();
+  private static final Logger _LOGGER = LogManager.getLogger(FrogetPasswordController.class);
 
   private static String generatedResetCode;
 

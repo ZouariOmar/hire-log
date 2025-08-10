@@ -48,7 +48,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class SignUpController {
-  private static final Logger _LOGGER = LogManager.getLogger();
+  private static final Logger _LOGGER = LogManager.getLogger(SignUpController.class);
 
   @FXML // ResourceBundle that was given to the FXMLLoader
   private ResourceBundle resources;

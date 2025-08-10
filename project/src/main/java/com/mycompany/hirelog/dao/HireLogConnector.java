@@ -36,8 +36,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class HireLogConnector {
-
-  private static final Logger _LOGGER = LogManager.getLogger();
+  private static final Logger _LOGGER = LogManager.getLogger(HireLogConnector.class);
 
   private static final String _CTREATE_QUERY = "INSERT INTO hire_logs (user_id, job_title, event_type, event_date, comments) VALUES(?, ?, ?, ?, ?)";
 

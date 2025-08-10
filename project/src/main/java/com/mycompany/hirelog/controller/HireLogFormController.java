@@ -37,6 +37,7 @@ import com.mycompany.hirelog.view.ViewUtils;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
@@ -44,9 +45,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 public class HireLogFormController {
-  private static final Logger _LOGGER = LogManager.getLogger();
+  private static final Logger _LOGGER = LogManager.getLogger(HireLogFormController.class);
 
   private final int userId;
 
@@ -122,6 +124,12 @@ public class HireLogFormController {
     }
 
     _LOGGER.info("`com.mycompany.hirelog.controller#onSubmitAction()` passed!");
+  }
+
+  @FXML
+  void onCancelAction(final ActionEvent e) {
+    Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+    stage.close();
   }
 
   @FXML // This method is called by the FXMLLoader when initialization is complete

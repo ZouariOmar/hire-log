@@ -30,7 +30,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 import io.github.cdimascio.dotenv.DotenvException;
 
 public class MailSenderService {
-  private static final Logger _LOGGER = LogManager.getLogger();
+  private static final Logger _LOGGER = LogManager.getLogger(MailSenderService.class);
 
   public static final void send(final String to, final String subject, final String htmlText) {
     try {

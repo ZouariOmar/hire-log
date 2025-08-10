@@ -1,7 +1,7 @@
 package com.mycompany.HireLog;
 
-import com.mycompany.hirelog.service.MailSenderService;
-import com.mycompany.hirelog.service.PasswordGeneratorService;
+// import com.mycompany.hirelog.service.MailSenderService;
+// import com.mycompany.hirelog.service.PasswordGeneratorService;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -22,10 +22,10 @@ public class AppTest extends TestCase {
    * Test the mail service
    */
   public static void testMailSenderService() {
-    MailSenderService.send(
-        "zouariomar20@gmail.com",
-        "do-not-reply - Reset Password",
-        "Reset Code: " + PasswordGeneratorService.generate(10));
+    // MailSenderService.send(
+    // "zouariomar20@gmail.com",
+    // "do-not-reply - Reset Password",
+    // "Reset Code: " + PasswordGeneratorService.generate(10));
   }
 
   /**

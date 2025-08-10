@@ -34,8 +34,7 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 import com.mycompany.hirelog.model.User;
 
 public final class UserConnector {
-
-  private static final Logger _LOGGER = LogManager.getLogger();
+  private static final Logger _LOGGER = LogManager.getLogger(UserConnector.class);
 
   private static final String _IS_USER_QUERY = "SELECT * FROM users WHERE username = ?";
 
