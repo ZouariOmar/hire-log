@@ -1,6 +1,6 @@
-# Contributing to HireLog
+# Contributing to hire-log
 
-Thank you for your interest in contributing to HireLog! Contributions from the community are welcome and appreciated.
+Thank you for your interest in contributing to hire-log! Contributions from the community are welcome and appreciated.
 
 This document outlines the process for contributing, whether you're reporting bugs, suggesting enhancements, improving documentation, or submitting code.
 
@@ -20,7 +20,7 @@ This document outlines the process for contributing, whether you're reporting bu
 2. Clone your fork to your local machine:
 
    ```bash
-   git clone https://github.com/ZouariOmar/HireLog.git
+   git clone https://github.com/ZouariOmar/hire-log.git
    ```
 
 3. Create a new branch for your feature or fix:
@@ -43,7 +43,7 @@ You can contribute in many ways:
 - Write tests
 - Review pull requests
 
-Please check the [issues](https://github.com/HireLog/issues) tab to see where help is needed.
+Please check the [issues](https://github.com/hire-log/issues) tab to see where help is needed.
 
 ## Code Guidelines
 
@@ -78,7 +78,7 @@ We follow a [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a welcoming communit
 
 ## License
 
-By contributing to HireLog, you agree that your contributions will be licensed under the same license as the project.
+By contributing to hire-log, you agree that your contributions will be licensed under the same license as the project.
 
 ---
 
