@@ -4,18 +4,18 @@
 [![Forks](https://img.shields.io/badge/FORKS-00-blue?style=plastic)](https://github.com/ZouariOmar/AgriGO/network/members)
 [![Stargazers](https://img.shields.io/badge/STARS-01-blue?style=plastic)](https://github.com/ZouariOmar/AgriGO/stargazers)
 [![Issues](https://img.shields.io/badge/ISSUES-00-blue?style=plastic)](https://github.com/ZouariOmar/AgriGO/issues)
-[![MIT License](https://img.shields.io/badge/LICENSE-GPL-blue?style=plastic)](LICENSE)
-[![Linkedin](https://img.shields.io/badge/Linkedin-5.8k-blue?style=plastic)](https://www.linkedin.com/in/zouari-omar-143239283)
+[![GPL3.0 License](https://img.shields.io/badge/LICENSE-GPL3.0-blue?style=plastic)](LICENSE)
+[![Linkedin](https://img.shields.io/badge/Linkedin-6.4k-blue?style=plastic)](https://www.linkedin.com/in/zouari-omar)
 
 <h1 align="center">
   <br>
-  <a href="doc/logo.png"><img src="doc/logo.png" alt="logo.png" width="250"></a>
+  <a href="doc/logo.png"><img src="doc/logo.png" alt="logo.png" width="300"></a>
   <br>
-  HireLog
+  hire-log
   <br>
 </h1>
 
-<h6 align="center">HireLog is a lightweight desktop app built using JavaFX, SQLite, and FXML to help job seekers log and manage their job applications. With an intuitive UI, users can register, log in, track application events (e.g., applied, interviewed, rejected), and reset passwords.</h6>
+<h6 align="center">hire-log is a lightweight desktop app built using JavaFX, SQLite, and FXML to help job seekers log and manage their job applications. With an intuitive UI, users can register, log in, track application events (e.g., applied, interviewed, rejected), and reset passwords.</h6>
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white)
@@ -28,13 +28,13 @@
 ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 <p align="center">
-  <a href="#-key-features">Key Features</a> •
-  <a href="#-how-to-use">How To Use</a> •
-  <a href="#-project-structure">Project Structure</a> •
-  <a href="#-built-with">Built With</a> •
-  <a href="#-contributions">Contributions</a> •
-  <a href="#-license">License</a> •
-  <a href="#-contact">Contact</a>
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#project-structure">Project Structure</a> •
+  <a href="#built-with">Built With</a> •
+  <a href="#contributions">Contributions</a> •
+  <a href="#license">License</a> •
+  <a href="#contact">Contact</a>
 </p>
 
 <p align="center">
@@ -43,7 +43,7 @@
   </a>
 </p>
 
-## 🚀 Key Features
+## Key Features
 
 - User Authentication (Login, Sign up, Forget Password)
 - Track job applications with events (applied, interviewed, rejected, etc.)
@@ -54,7 +54,7 @@
 - Local storage, no internet required
 - Modify/delete job records easily
 
-## 🛠 How to Use
+## How to Use
 
 ### Prerequisites
 
@@ -63,7 +63,7 @@
 - SQLite JDBC driver
 - Maven
 
-> See [pom.xml](https://raw.githubusercontent.com/ZouariOmar/HireLog/refs/heads/main/project/pom.xml) for more details
+> See [pom.xml](https://raw.githubusercontent.com/ZouariOmar/hire-log/refs/heads/main/project/pom.xml) for more details
 
 ### Run the app
 
@@ -71,19 +71,19 @@ Clone the repository and run via your IDE or command line:
 
 ```bash
 # Clone this repo
-$ git clone https://github.com/ZouariOmar/HireLog
+$ git clone https://github.com/ZouariOmar/hire-log
 
-# Open in your IDE and run the main class (HireLogApp.java)
+# Open in your IDE and run the main class (hire-logApp.java)
 # ...
 
 # Or if you are using Linux you can run
-cd HireLog && ./jrun --install && ./jrun -r
+cd hire-log && ./jrun --install && ./jrun -r
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
-HireLog/
+hire-log/
 ├── AUTHORS
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
@@ -109,18 +109,18 @@ HireLog/
 │   │   │   │               ├── controller
 │   │   │   │               │   ├── DashboardController.java
 │   │   │   │               │   ├── FrogetPasswordController.java
-│   │   │   │               │   ├── HireLogFormController.java
+│   │   │   │               │   ├── hire-logFormController.java
 │   │   │   │               │   ├── LoginController.java
 │   │   │   │               │   └── SignUpController.java
 │   │   │   │               ├── dao
 │   │   │   │               │   ├── DatabaseManager.java
-│   │   │   │               │   ├── HireLogConnector.java
+│   │   │   │               │   ├── hire-logConnector.java
 │   │   │   │               │   └── UserConnector.java
 │   │   │   │               ├── flag
-│   │   │   │               │   └── HireLogEvents.java
-│   │   │   │               ├── HireLogApp.java
+│   │   │   │               │   └── hire-logEvents.java
+│   │   │   │               ├── hire-logApp.java
 │   │   │   │               ├── model
-│   │   │   │               │   ├── HireLog.java
+│   │   │   │               │   ├── hire-log.java
 │   │   │   │               │   └── User.java
 │   │   │   │               ├── service
 │   │   │   │               │   ├── MailSenderService.java
@@ -147,7 +147,7 @@ HireLog/
 │   │   │       ├── fxml
 │   │   │       │   ├── Dashboard.fxml
 │   │   │       │   ├── ForgetPassword.fxml
-│   │   │       │   ├── HireLogForm.fxml
+│   │   │       │   ├── hire-logForm.fxml
 │   │   │       │   ├── Login.fxml
 │   │   │       │   └── SignUp.fxml
 │   │   │       ├── log4j2.xml
@@ -157,20 +157,20 @@ HireLog/
 │   │       └── java
 │   │           └── com
 │   │               └── mycompany
-│   │                   └── HireLog
+│   │                   └── hire-log
 │   │                       └── AppTest.java
 ├── README.md
 └── SECURITY.md
 ```
 
-## 🛠 Built With
+## Built With
 
 - [Java](https://www.oracle.com/java/)
 - [JavaFX](https://openjfx.io/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [SceneBuilder](https://gluonhq.com/products/scene-builder/)
 
-## 🤝 Contributions
+## Contributions
 
 Contributions are welcome to expand and improve the repository! Here's how you can contribute:
 
@@ -178,7 +178,7 @@ Contributions are welcome to expand and improve the repository! Here's how you c
 2. **Clone** your fork:
 
    ```bash
-   git clone https://github.com/ZouariOmar/HireLog.git
+   git clone https://github.com/ZouariOmar/hire-log.git
    ```
 
 3. **Create a new branch** for your feature:
@@ -201,22 +201,22 @@ Contributions are welcome to expand and improve the repository! Here's how you c
 
 6. Open a **pull request** for review.
 
-## 📜 License
+## License
 
 This repository is licensed under the **GPL License**. You are free to use, modify, and distribute the content. See the [LICENSE](LICENSE) file for details.
 
-## 📬 Contact
+## Contact
 
 For questions or suggestions, feel free to reach out:
 
 - **GitHub**: [ZouariOmar](https://github.com/ZouariOmar)
 - **Email**: [zouariomar20@gmail.com](mailto:zouariomar20@gmail.com)
-- **LinkedIn**: [Zouari Omar](https://www.linkedin.com/in/zouari-omar-143239283)
-
-**Happy Coding!**
+- **LinkedIn**: [Zouari Omar](https://www.linkedin.com/in/zouari-omar)
 
 <p align="center">
   <a href="doc/" target="_blank">
     <img src="doc/meme.png" alt="meme.png">
   </a>
 </p>
+
+> Happy Coding!
